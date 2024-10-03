@@ -151,12 +151,6 @@ body {
   .pup {
     width: 220px;
   }
-
-  .fotter {
-    flex-direction: column;
-    gap: 10px;
-    width: 280px;
-  }
 }
 
 /* For Desktop - 1440px */
@@ -187,9 +181,5 @@ body {
 
   .pup {
     width: 280px;
-  }
-
-  .fotter {
-    width: 350px;
   }
 }
