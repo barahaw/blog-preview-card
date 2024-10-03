@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  line-height: 150%;
+  overflow: hidden;
+}
+
+/* Container settings */
+.continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+/* Card border */
+.bord-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  width: 80%;
+  height: 550px;
+  box-shadow: 3px 10px 20px 0px hsl(0, 0%, 42%);
+}
+
+/* Main card design */
+.card {
+  width: 300px;
+  height: 480px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid #111111;
+  border-radius: 25px;
+  box-shadow: 10px 10px 1px -5px #111111;
+}
+
+/* SVG Image styling */
+.svg-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.svg-img img {
+  display: inline-block;
+  border-radius: 10px;
+  width: 250px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Learning section */
+.learning {
+  width: 100px;
+  height: 50px;
+  margin: 4px 4px 4px 30px;
+}
+
+.learning .text {
+  background-color: hsl(47, 88%, 63%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+/* Paragraph styling */
+.pup {
+  width: 250px;
+  font-size: small;
+  margin: 15px;
+  color: #111111;
+}
+
+/* Language section */
+.lang-format {
+  margin: 7px 12px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.lang {
+  margin: 7px 10px;
+  color: rgb(107, 107, 107);
+  font-size: small;
+}
+
+/* Footer settings */
+.fotter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.image-avatar {
+  margin-left: 5px;
+}
+
+.fotter span {
+  font-weight: bold;
+}
+
+/* ----------- Responsive Design ----------- */
+
+/* For Mobile - 375px */
+@media (min-width: 375px) {
+  .bord-card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .card {
+    width: 280px;
+    height: auto;
+    margin: 10px;
+  }
+
+  .svg-img img {
+    width: 200px;
+  }
+
+  .learning {
+    width: 90px;
+    height: 40px;
+  }
+
+  .learning .text {
+    font-size: medium;
+    padding: 10px;
+  }
+
+  .pup {
+    width: 220px;
+  }
+
+  .fotter {
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+  }
+}
+
+/* For Desktop - 1440px */
+@media (min-width: 1440px) {
+  .bord-card {
+    width: 60%;
+    height: 600px;
+  }
+
+  .card {
+    width: 350px;
+    height: 550px;
+  }
+
+  .svg-img img {
+    width: 300px;
+  }
+
+  .learning {
+    width: 120px;
+    height: 60px;
+  }
+
+  .learning .text {
+    font-size: larger;
+    padding: 20px;
+  }
+
+  .pup {
+    width: 280px;
+  }
+
+  .fotter {
+    width: 350px;
+  }
+}
